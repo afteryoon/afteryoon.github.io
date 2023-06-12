@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logInPage</title>
+    <style>
+        @import url(yoonStyle.css);
+
+        .longCheck {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Sign In</h1>
+    <hr>
+    <form action="" name="memberFrm">
+        <div>
+            <b class="name">UserID</b><br>
+            <input class="text" type="text" name="UserID" id="UserID" placeholder="아이디">
+            <span class="longCheck">*존재하지 않는 아이디입니다.</span>
+            <br><br>
+        </div>
+        <div>
+            <b class="name">PW</b><br>
+            <input class="text" type="password" name="PW" id="PW" placeholder="패스워드">
+            <input type="checkbox" name="vision" id="vision">
+            <span class="longCheck">*비밀번호가 틀렸습니다.</span>
+            <br><br>
+        </div>
+
+
+        <div>
+            <button type="submit" class="signIn" id="signIn">로그인</button>
+            <button type="submit" class="signUp" id="signUp">회원가입</button>
+            
+        </div>
+    </form>
+
+    <script>
+      
+
+        
+    </script>
+<script src="./js/login.js"></script>
+</body>
+
+</html>

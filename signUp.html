@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIGNUP</title>
+        <style>
+               @import url(yoonStyle.css);
+            .checkLong{
+                color: red;
+                display: none;
+            }
+        </style>
+        <script>
+
+            if(window.localStorage)
+                console.log("사용가능");
+
+        </script>
+
+    </head>
+    <body>
+        <h1 >Sign Up</h1>
+        <hr>
+        <form action="" name="memberFrm">
+        <div>
+            <b class="name">UserID</b><br>
+            <input class="text" type="text" name="UserID"  id="UserID"  placeholder="아이디">
+            <span class="checkLong">* 대/소문자, 숫자를 사용한 4~12자리를 입력하세요</span>
+            <span class="checkLong">* 이미 존재하는 아이디입니다. 다른 아이디를 사용해주세요.</span>
+            <br><br>
+        </div>
+        <div>
+            <b class="name">PW</b><br>
+            <input class="text" type="password" name="PW"  id="PW" placeholder="패스워드">
+            <input type="checkbox" name="vision" id="vision">
+            <span class="checkLong">* 대/소문자와 특수문자(\*!&)를 포함한 4~15자리 수를 입력하세요.</span>
+            <br><br>
+        </div>
+        <div>
+            <b class="name">PW 확인</b><br>
+            <input class="text" type="password" name="PWC" id="PWC"  placeholder="패스워드확인">
+            <span class="checkLong">* 비밀번호를 확인해주세요.</span>
+            <br><br>
+        </div>
+        <div>
+            <b class="name">email</b><br>
+            <input class="text" type="email" name="email" id="email"  placeholder="E-mail">
+            <span class="checkLong">* 올바른 이메일 형식이 아닙니다..</span>
+            <br><br>
+        </div>
+        
+        <div>
+            <button type="submit" class="sign_up" >회원가입</button>  
+            <button type="onclick" class="sign_in" >로그인</button>  
+            
+        </div>
+    
+    </form>
+
+
+        <script>
+
+
+        </script>
+        <script src="./js/sign.js"></script>
+    </body>
+</html>

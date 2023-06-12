@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>berryYoon's HomePage</title>
+    <meta charset="utf-8">
+    <link rel="Ystylesheet" type="css" href="yoonStyle.css">
+        <style>
+            @import url(yoonStyle.css);
+         
+         
+
+           
+
+        </style>
+    <script>
+        (async()=>{
+            await new Promise((resolve)=>{
+                setTimeout(()=>resolve(),180000);
+            });
+            open('./advertising.html','advertising','width =500px, height=500px,left=100px,top=100px');
+            console.log('확인');
+        })();
+      (onload=()=>{
+
+        console.log('페이지로딩완료');
+          const nowLog= localStorage.getItem("nowLog");
+          console.log(location.href);
+          console.log(nowLog);
+          if(nowLog !== "logNot"){
+            console.log(nowLog,"true");
+            document.getElementsByClassName('checkLog')[2].style.display='inline';
+            document.getElementsByClassName('ment')[0].innerHTML=`"${nowLog}"님 환영합니다!🥳`;
+            
+        }else{
+              console.log(nowLog,"false");
+            document.getElementsByClassName('checkLog')[1].style.display='inline';
+            document.getElementsByClassName('checkLog')[0].style.display='inline';
+            document.getElementsByClassName('ment')[0].innerHTML='코딩하기 좋은 날🤠';
+          
+          }
+          
+
+      }); 
+
+    //   열심히 하시고 분발 하시길,,
+       
+    </script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#About" >AboutMe &nbsp; 소개</a></li>
+                <li><a href="#RoadMap">RoadMap &nbsp; 로드맵</a></li>
+                <li><a href="#Education">Education  &nbsp; &nbsp;학력</a></li>
+                <li><a href="#Loves"> what I Love &nbsp; &nbsp;취미</a></li>
+                <li><a href="#Projects">Projects  &nbsp;프로젝트</a></li>
+                <li><a href="#login.html" id="loginPop" class="checkLog">&nbsp;Login &nbsp; &nbsp;&nbsp; &nbsp;</a></li>
+                <li><a href="#signUp.html" id="signPop" class="checkLog">&nbsp;SignUp&nbsp; &nbsp; &nbsp;</a></li>
+                <br>
+                <li><a href="#Logout" id="logOut" class="checkLog">Log Out&nbsp;&nbsp;</a></li>
+                <br><br><br>
+                <li><a href="#nowId" id="nowId" class="ment">&nbsp; 000님 환영합니다</a></li>
+                
+            </ul>
+        </nav>
+    <main>
+    
+    <section id="popUp">
+        <div style="text-align: center">
+    <!-- <img src="https://pgnqdrjultom1827145.cdn.ntruss.com/img/26/92/2692b88849b4e1dfde7d3f059189ffdc54fc6e8e3900969870b2208911a01f80_v1.jpg"> -->
+<div>
+    <h1>berry_afteryoon</h1>
+</div>
+    <br/>
+    
+    <a href="" ><img src="/hompage/image/내사진 (5).jpg" class="selfie" ></a>
+    <a href="" ><img src="/hompage/image/내사진 (7).jpg"  class="selfie"></a>
+    <a href="" ><img src="/hompage/image/내사진 (10).jpg"  class="selfie"></a>
+    <a href="" ><img src="/hompage/image/내사진 (9).jpg" class="selfie" ></a>
+ 
+    <h4 style="color: gray">wellcome
+        <br> berry_afteryoon's place</h4>
+      <h5>berry_yoon의 공간에 오신 것을 환영합니다./&nbsp;
+        <br>berry은 better의 의 뜻을 strawberry의 어감에 담아
+        <br>AfterYoon은 미래의 나 자신이란 뜻을 담아
+        <br> 미래의 나는 지금보다 더 정진되어있기를 바라는 의미를 담았습니다.</h5>
+        <div class="sns-pictogram">
+            <a href="https://www.instagram.com/berry_afteryoon_/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+            <a href="tel:010-2358-5582" target="_blank"><i class="fa-solid fa-phone fa-2x"></i></a>
+            <a href="https://github.com/afteryoon" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+        </div>
+ 
+    <h6 style="color: gray">@ig: berry_afteryoon_</h6>
+    </div>
+    </section>
+
+
+    <section id="About">
+        <h1>AboutMe</h1>
+        
+        <div class="step">
+            <h3>나키무위</h3>
+            <img src="../hompage/image/내사진 (6).jpg" alt="" width="150px">
+            <h5>본명 :정상윤 <br>
+                출생 :1996.03.05<br>
+                국적 : 대한민국 <br>
+                186,80,250<br>
+                <br>
+            </h5>
+            <div id="addText"><a href="javascript:textVision()" id="addTextVision" style="text-decoration: underline;">더보기</a> 
+                <a href="javascript:textHidden()" id="addTextHidden" style="text-decoration: underline;">접기</a> 
+                <br><br><br>
+                <h2 class="addMsg">“후회하지 말자”, <br>
+                    “과정에 결과는 딸려온다“, <br>
+                    ”멀리 넓게 보는 사람이 되자”,<br>
+                    “습관을 만드는 사람이 되자”,<br>
+                    “건강한 정신에 건강한 정신이 깃든다”, <br>
+                </h2>
+                <br> <br><br>
+                <h4 class="addMsg">
+                    위에 글들은 제가 중요하게 생각하는 가치관입니다. <br>
+살면서 후회하지 않을 선택을 할 순 없겠지만, <br>
+그 때의 최선이었을 선택에 후회하지 않고  좋은 선택으로 만들 수 있는 사람이 되기를, <br>
+결과를 보고 달려가다 그 결과의 이유로 나태해지거나 안주하고 도태되지 않는, <br> 
+과정을 즐길 수 있는 사람이 되어 결국 가장 멀리갈 수 있는 사람이 되기를 , <br>
+습관을 만드는 사람이 되어 나의 생활 루틴을 조절할 수 있기를, <br>
+바라고 실천하며 후엔 더 나은 내가 있을 것입니다.
+
+                </h4>
+
+            </div>
+        </div>
+       
+    </section>
+  
+        <div>
+  
+        </div>
+
+
+        <section id="RoadMap">
+            <h1>RoadMap</h1>
+            <div class="roadmap">
+                <div class="step">
+                    <h1>Step 1</h1>
+                    <h3>취업 이전 </h3>
+                    <p>수업시간 제외 공부량: 2시간이상 <br>
+                      <br>
+                      수업시간에 집중할 수 있는 루틴 생활화
+                      <br><br>
+                      공부하는 습관 만들기
+                      <br><br>
+                      주에 3회~6회 운동
+                      <br><br>
+                      백준 일주일 (7문제)
+                    </p>
+                  </div>
+                <div class="step">
+                  <h1>Step 2</h1>
+                  <h3>취업 이후 : 초급개발자</h3>
+                  <p>리눅스 공부하기(os) <br>
+                    <br>
+                    영어 배우기
+                    <br><br>
+                    하루 독서 10분 이상
+                    <br><br>
+                    주에 4회~6회 운동
+                    <br><br>
+                    자격증 취득
+                  </p>
+                </div>
+                <div class="step">
+                    <h1>Step 3</h1>
+                    <h3> 중급개발자</h3>
+                    <p>클라우드 ai 데이터  공부하기<br>
+                      <br>
+                      영어 배우기
+                      <br><br>
+                      하루 독서 20분 이상
+                      <br><br>
+                      주에 5회~6회 운동
+                      <br><br>
+                      자격증 취득
+                    </p>
+                  </div>
+                  <div class="step">
+                    <h1>Step 4</h1>
+                    <h3> 고급 개발자</h3>
+                    <p> 개발&헬스 서비스 접목 사업<br>
+                      <br>
+                      해외에서 1년 이상 거주
+                      <br><br>
+                      하루 독서 30분 이상
+                      <br><br>
+                      주에 6회 운동
+                      <br><br>
+                      자격증 취득
+                    </p>
+                  </div>
+           
+              </div>
+            </body>
+        </section>
+
+
+        <section id="Education">
+            <h1>Education</h1>
+            <video src="../hompage/image/쉠동영상.mp4" controls autoplay width="300px" loop="infiniti" muted></video>
+            <img src="../hompage/image/쉠.jpg" width="300px" alt="">
+            <div class="educationinfo">
+                <fieldset>
+                    <legend><h3>학력</h3></legend>
+                    <ul>
+                        <li>삼육대학교</li>
+                        <br>
+                        <li>선사고등학교</li>
+                        <br>
+                        <li>강일중학교</li>
+                        <br>
+                        <li>선사초등학교</li>
+                    </ul>
+                </fieldset>
+            </div>
+        </section>
+
+        <section id="Loves">
+            <h1>WhatILove</h1>
+            <img src="../hompage/image/내사진 (3).jpg" width="150px" alt="">
+            <img src="../hompage/image/인바디.jpeg" width="150px" alt="">
+            <video src="../hompage/image/클라이밍.mp4" controls autoplay width="200px" loop="infiniti"></video>
+            <video src="../hompage/image/배드민턴.mp4" controls autoplay width="300px" loop="infiniti"></video>
+            <div>
+                <h2>건강한 육신에 건강한 정신이 깃든다</h2>
+                <h5>저의 취미는 운동입니다. 중학생 때부터 배드민턴을 시작해 <br>
+                     체육에 관심을 갖게되고 지도자의 꿈을 키웠습니다.<br>
+                     지금은 몇번의 사고와 환경과 건강상의 이유로 지도자의 꿈에서 <br>
+                     개발자로의 꿈을 꾸게 되었지만 멀어질 수 없는 존재입니다. <br>
+                     이번 공부를 하면서도 '개발자란 직업은 꼭 운동을 병행해야하는 직업이다'<br>
+                     느끼기도 하였습니다 오랜 시간 컴퓨터 앞에서 앉아서 하는 작업이 많은 만큼 <br>
+                     허리와 목에 부담도 많이 가고 체형도 망가지기 쉬운 직업이란 것을 느꼈습니다. <br>
+                     개발의 공부가 재밌고 더 많이 배우고 싶은 만큼 오래 직업을 유지하기 위해서 <br>
+                     개발과 운동 모두 함께 갖고, 미래에 두 종목을 접목한 컨텐츠를 만들고 싶습니다.
+                    </h5>
+            </div>
+        </section>
+      
+        <section id="Projects">
+            <h1>Projects</h1>
+            <div>준비중()</div>
+        </section>
+    </main>
+    
+  
+    <script src="https://kit.fontawesome.com/94dac56624.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+<script>
+
+</script>
+</body>
+</html>
