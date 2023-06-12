@@ -30,7 +30,8 @@ document.getElementById("signIn").addEventListener('click', () => {
    
 
     alert(`로그인 성공! ${userID.value}님 환영합니다!`);
-    // reload('index.html');
+   
+    opener.location.reload();
     close();
 
 })
